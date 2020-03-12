@@ -17,6 +17,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //finding layout elements
         b1=(Button)findViewById(R.id.btn1);
         b2=(Button)findViewById(R.id.btn2);
         b3=(Button)findViewById(R.id.btn3);
@@ -38,6 +40,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         ans=(TextView)findViewById(R.id.Answer);
 
+        //listening buttons
         bclear.setOnClickListener(this);
 
         b1.setOnClickListener(new View.OnClickListener() {
